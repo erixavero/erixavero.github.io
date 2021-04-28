@@ -4,22 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Welcome</title>
   </head>
   <body>
     <div class="container">
-      <h1>
-        Eric Savero
-      </h1>
-      <h2>Aspiring 
-        <span class="txt-type"
-        data-wait="3000"
-        data-words='["Software Engineer", 
-                      "Web Developer", 
-                      "Data Scientist"]'>
-        </span></h2>
-      <h3>and more...</h3>
+      <!-- title -->
+      <div class="row parallaxbg">
+        <h1>
+          Eric Savero
+        </h1>
+        <h2>
+          Aspiring
+          <span
+            class="txt-type"
+            data-wait="3000"
+            data-words='["Software Engineer", 
+                        "Web Developer", 
+                        "Data Scientist"]'
+          >
+          </span>
+        </h2>
+        <h3>and more...</h3>
+      </div>
+
+      <!-- second content -->
+      <div class="biotxt">
+        About
+        <div class="aboutme-blurb row">
+          <div class="col-6 col-md-4">
+            <img src="img/face.png" alt="my face" />
+          </div>
+          <p class="col-12 col-md-8">
+            I am just a dude trying stuff out in the IT world, slowly but surely
+            improving my skills and building connection.
+            <br /><br />
+            A fresh double degree graduate from Binus International (S.Kom) and
+            University of Nottingham (B.Sc Hons. Software Engineering).
+            Currently running a family business. Actively looking for work and
+            new experiences.
+            <br /><br />
+            Still continuously learning, this website is as much a
+            work-in-progress as my life.
+          </p>
+        </div>
+      </div>
+
+      <!-- contact us -->
+      <footer class="contactus">
+        Let's connect.
+        <div class="row">
+          <a href="https://www.linkedin.com/in/eric-hermawan-821721161">
+            <img src="img/linkedIn.png" alt="LinkedIn">
+          </a>
+          <a href="mailto:eric.savero9029@gmail.com">
+            <img src="img/gmail.png" alt="Gmail">
+          </a>
+        </div>
+      </footer>
     </div>
     <script src="main.js"></script>
   </body>

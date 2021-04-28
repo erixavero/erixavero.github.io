@@ -3,24 +3,59 @@
 body {
   font-family: "Ubuntu", sans-serif;
   height: 100vh;
-  background: #333 url("faf.jpg") no-repeat center center / cover;
+  background: #333 no-repeat center center / cover;
   color: #ccc;
-  overflow: hidden;
 }
 
-.container {
+.parallaxbg {
+  height: 100vh;
+  background: url("img/faf.jpg") no-repeat center center / cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
+  padding: 0 2rem;
+  overflow: hidden;
   justify-content: center;
-  height: 100%;
-  padding: 0 3rem;
+}
+
+.biotxt {
+  font-size: 2em;
+  width: 90%;
+  padding: 1.5em 1em;
+}
+
+.aboutme-blurb {
+  align-items: center;
+}
+
+.aboutme-blurb img {
+  border-radius: 5px;
+  filter: grayscale(100%);
+}
+.aboutme-blurb img:hover {
+  filter: grayscale(0%);
+}
+
+.aboutme-blurb p {
+  font-size: 0.6em;
+}
+
+.contactus {
+  font-size: 2em;
+  width: 90%;
+  padding: 1.5em 1em;
+}
+
+.contactus img {
+  width: 2em;
+  padding-right: 20%;
 }
 
 h1 {
   font-size: 3.5rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -28,7 +63,7 @@ h3 {
   color: #aaa;
 }
 
-/*cursor*/
+/*typer cursor*/
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
 }
@@ -38,34 +73,38 @@ h3 {
     font-size: 5rem;
   }
   h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   h3 {
     font-size: 2.5rem;
   }
 }
 
-@media (max-width: 800px) {
-  .container {
-    padding: 0 1rem;
+@media (max-width: 1000px) {
+  .parallaxbg {
+    height: 65vh;
   }
   h1 {
     font-size: 3rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h3 {
     font-size: 1rem;
   }
+  .biotxt {
+    align-items: center;
+    width: 120%;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   h1 {
     font-size: 2.5rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   h3 {
     font-size: 1.2rem;
